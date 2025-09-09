@@ -2,88 +2,90 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>CFBundleDisplayName</key>
-	<string>P2P Data Transfer</string>
-	<key>CFBundleExecutable</key>
-	<string>$(EXECUTABLE_NAME)</string>
-	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>p2p_data_transfer</string>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>CFBundleShortVersionString</key>
-	<string>$(FLUTTER_BUILD_NAME)</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>$(FLUTTER_BUILD_NUMBER)</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
-	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>CADisableMinimumFrameDurationOnPhone</key>
-	<true/>
-	<key>UIApplicationSupportsIndirectInputEvents</key>
-	<true/>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+    <key>CFBundleDisplayName</key>
+    <string>P2P Data Transfer</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>p2p_data_transfer</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>$(FLUTTER_BUILD_NAME)</string>
+    <key>CFBundleSignature</key>
+    <string>????</string>
+    <key>CFBundleVersion</key>
+    <string>$(FLUTTER_BUILD_NUMBER)</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+    <key>UIMainStoryboardFile</key>
+    <string>Main</string>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <key>CADisableMinimumFrameDurationOnPhone</key>
+    <true/>
+    <key>UIApplicationSupportsIndirectInputEvents</key>
+    <true/>
 
-	<!-- ***** GEREKLİ PRIVACY ANAHTARLARI (iOS) ***** -->
+    <!-- ***** GEREKLİ PRIVACY ANAHTARLARI (iOS) ***** -->
 
-	<!-- Bluetooth (iOS 13+ için) -->
-	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>Uygulama, yakındaki diğer cihazları Bluetooth üzerinden bulmak ve doğrudan veri alışverişi yapmak için Bluetooth kullanır.</string>
+    <!-- Bluetooth (iOS 13+) -->
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Uygulama, yakındaki diğer cihazları bulmak ve onlarla doğrudan veri alışverişi yapmak için Bluetooth kullanır.</string>
 
-	<!-- Geride kalan bazı iOS sürümleri için uyumluluk -->
-	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>Uygulama Bluetooth özellikleri kullanır.</string>
+    <!-- Bazı iOS sürümleri için ek uyumluluk -->
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>Uygulama Bluetooth üzerinden cihazlar ile iletişim kurmak için izin ister.</string>
 
-	<!-- Location — Multipeer bazen konum gerektirebilir / Wi-Fi keşif -->
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Uygulama, yakındaki cihazları keşfetmek için konum iznine ihtiyaç duyar (sadece kullanım sırasında).</string>
+    <!-- Konum (Wi-Fi ve bazı Bluetooth keşifleri için) -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Uygulama yakındaki cihazları keşfetmek için konum iznine ihtiyaç duyar.</string>
 
-	<!-- Eğer uygulama sürekli konum istiyorsa (şimdilik gerekli değilse eklemeye gerek yok),
-	     ancak bazı iOS sürümlerinde "always" anahtarı da istenebilir -->
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Uygulama, kritik durumlarda iletişim ve konum paylaşımı için arka planda da konum izni isteyebilir.</string>
+    <!-- (Opsiyonel) Arka planda konum erişimi -->
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Uygulama, kritik durumlarda iletişim ve konum paylaşımı için arka planda da konum izni isteyebilir.</string>
 
-	<!-- Local Network (iOS 14+ Bonjour / local socket için) -->
-	<key>NSLocalNetworkUsageDescription</key>
-	<string>Uygulama, yerel ağdaki cihazlarla doğrudan bağlantı kurmak için yerel ağ iznine ihtiyaç duyar.</string>
+    <!-- Local Network (iOS 14+) -->
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>Uygulama, yerel ağınızdaki cihazlarla Wi-Fi üzerinden doğrudan bağlantı kurarak mesajlaşma yapmak için bu izne ihtiyaç duyar.</string>
 
-	<!-- Bonjour servisleri - serviceType ile eşleşmeli -->
-	<key>NSBonjourServices</key>
-	<array>
-		<string>_papatiu-p2p._tcp</string>
-	</array>
+    <!-- Bonjour servisleri -->
+    <key>NSBonjourServices</key>
+    <array>
+        <string>_papatiu-p2p._tcp</string>
+        <string>_mpconn._tcp</string>
+        <string>_dartobservatory._tcp</string>
+    </array>
 
-	<!-- Eğer Multipeer ile mikrofon kullanılacaksa ekle (siz kullanmıyorsanız atlayın) -->
-	<!--
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Uygulama sesli iletişim için mikrofon erişimine ihtiyaç duyar.</string>
-	-->
+    <!-- (Opsiyonel) Mikrofon erişimi -->
+    <!--
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Uygulama sesli iletişim için mikrofon erişimine ihtiyaç duyar.</string>
+    -->
 
-	<!-- Eğer Nearby Interaction / UWB kullanacaksanız (iOS 14+) -->
-	<!-- <key>NSNearbyInteractionUsageDescription</key> -->
-	<!-- <string>Nearby Interaction özellikleri için izin açıklaması.</string> -->
-
+    <!-- (Opsiyonel) Nearby Interaction / UWB -->
+    <!--
+    <key>NSNearbyInteractionUsageDescription</key>
+    <string>Nearby Interaction özellikleri için izin açıklaması.</string>
+    -->
 </dict>
 </plist>
